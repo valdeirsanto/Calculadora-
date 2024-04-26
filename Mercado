@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Mercado {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bem-vindo ao Mercado! O que você deseja comprar?");
+        System.out.println("1 - Feijão");
+        System.out.println("2 - Arroz");
+        System.out.println("3 - Pipoca");
+
+        System.out.print("Escolha o número do item que deseja comprar: ");
+        int escolha = scanner.nextInt();
+
+        switch (escolha) {
+            case 1:
+                System.out.println("Você comprou feijão.");
+                break;
+            case 2:
+                System.out.println("Você comprou arroz.");
+                break;
+            case 3:
+                System.out.println("Você comprou pipoca.");
+                break;
+            default:
+                System.out.println("Opção inválida.");
+        }
+
+        scanner.close();
+    }
+}
